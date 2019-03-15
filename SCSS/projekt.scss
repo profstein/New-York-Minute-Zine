@@ -1,0 +1,63 @@
+@import 'typography';
+@import 'nav';
+@import 'normalize';
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+}
+
+figcaption {
+  font-size: small;
+  font-family: 'Merriweather', serif;
+  text-align: justify;
+  margin-left: 60px;
+  margin-right: 90px;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+}
+
+footer {
+  font-size: small;
+}
+.article-text {
+  margin: 0 auto;
+  width: 90%;
+}
+.intro {
+  font-size: 1.7em;
+  font-weight: 400;
+  margin: 2em 0;
+}
+
+h3 {
+  margin-left: 60px;
+  margin-right: 80px;
+}
+/*
+Base Responsive Styling
+ */
+/*The following 7 lines are from Paul Irish and apply a border-box model.
+ See this page for more info: http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+/* Basic Responsive Images and Video */
+img,
+video {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+
+ul {
+  margin: 60px;
+}
