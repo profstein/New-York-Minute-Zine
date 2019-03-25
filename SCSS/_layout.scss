@@ -1,0 +1,53 @@
+
+//HOMEPAGE layout
+
+//can add css for browsers that don't support grid
+//or for mobile screens if all one column
+
+@supports (grid-area: auto){
+
+  @media (min-width: 800px){
+    .homegrid{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+          "about articles"
+          "subway articles";
+    }
+
+    .article-text{ grid-area: about};
+    .article-thumbs{ grid-area: articles}
+    .subway{grid-area: subway;}
+  }//end min-width 800px
+
+  @media (min-width: 1200px){
+    .homegrid{
+      grid-template-columns: 1fr 2fr 3fr;
+      grid-template-areas:
+          "about articles subway";
+    }
+    .article-thumbs{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap:20px;
+    }
+    .timessquare{grid-column: 1/3}
+    .tribeca{grid-column:1/3}
+  }//end min-width 1200
+
+}//end @supports
+
+
+
+//ARTICLE PAGES layout
+
+//can add css for browsers that don't support grid
+//or for mobile screens if all one column
+
+@supports (grid-area: auto){
+
+.articlegrid{
+
+}
+
+}// end @supports

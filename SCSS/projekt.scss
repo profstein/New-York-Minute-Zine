@@ -1,6 +1,7 @@
-@import '_typography';
-@import '_nav';
-@import '_normalize';
+@import 'typography';
+@import 'layout';
+@import 'nav';
+@import 'normalize';
 
 h1 {
   font-family: 'Oswald', sans-serif;
